@@ -7,6 +7,7 @@ Data Format Converter for Deno
 * [CSV to JSON](#csv-to-json)
     * [Converting a CSV String](#converting-a-csv-string)
 * [JSON to CSV](#json-to-csv)
+    * [Converting a JSON Object](#converting-a-json-object)
 * [JSON to XML](#json-to-xml)
 * [XML to JSON](#xml-to-json)
 
@@ -19,7 +20,7 @@ Converts a CSV string to JSON
 ```typescript
 import { CSVtoJSON } from "https://deno.land/x/data-format-converter@v1.0.0/mod.ts";
 const csvString =
-  "name, age, dob\n" +
+  "name, age, year\n" +
   "John Doe, 33, 1990\n" +
   "Jane Doe, 31, 1989";
 const result = CSVtoJSON(csvString) // [ ["name", "age", "dob"], ["John Doe", ...], ["Jane Doe", ...] ]
@@ -35,7 +36,7 @@ Converts a JSON object to CSV
 import { JSONtoCSV } from "https://deno.land/x/data-format-converter@v1.0.0/mod.ts";
 const json = [
   [
-    "name", "age", "dob"
+    "name", "age", "year"
   ],
   [
     "John Doe", "33", "1990"
