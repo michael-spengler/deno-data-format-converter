@@ -1,3 +1,12 @@
+/**
+ * Example:
+ *     const json = [ ["name", "age", "year"], ["John Doe", ...] ]
+ *     JSONtoCSV(json) // "name, age, year\n John Doe, 33, 1990"
+ *
+ * @param Array<Array<string>> jsonData
+ *
+ * @return string
+ */
 export function JSONtoCSV (jsonData: Array<Array<string|number>>): string {
   const titles = jsonData[0];
   jsonData.splice(0, 1);
