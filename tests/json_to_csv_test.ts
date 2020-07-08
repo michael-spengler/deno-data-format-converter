@@ -17,9 +17,9 @@ Deno.test({
     ]
     const result = JSONtoCSV(json)
     assertEquals(result,
-        "name, age, year\r\n" +
-        "John Doe, 33, 1990\r\n" +
-        "Jane Doe, 31, 1989\r\n"
+        "name, age, year\n" +
+        "John Doe, 33, 1990\n" +
+        "Jane Doe, 31, 1989\n"
     )
   }
 })

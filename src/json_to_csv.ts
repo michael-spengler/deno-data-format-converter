@@ -6,7 +6,7 @@ export function JSONtoCSV (jsonData: Array<Array<string|number>>): string {
   titles.forEach((title, i) => {
     str += title;
     if  (titles[i] === titles[titles.length - 1]) { // last title
-      str += "\r\n";
+      str += "\n";
     } else {
       str += ", "
     }
@@ -14,7 +14,7 @@ export function JSONtoCSV (jsonData: Array<Array<string|number>>): string {
   rows.forEach((row, i) => {
     let tmp = row.toString(); // "Jane Doe,31,1989"
     tmp = tmp.replace(/,/g, ', ')
-    str += tmp + "\r\n";
+    str += tmp + "\n";
   });
   return str
 }
