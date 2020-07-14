@@ -76,8 +76,8 @@ function traverse(o: any, func: Function) {
     if (i === "text") {
       continue;
     }
-    // @ts-ignore
     func.apply(
+        // @ts-ignore
       this,
       [i, o[i].text ? o[i].text : o[i], indentationSpaces, o[i]._attrs],
     );

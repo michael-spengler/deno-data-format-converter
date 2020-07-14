@@ -31,6 +31,5 @@ export function CSVtoJSON(csvData: string): Array<Array<string>> {
   rows.forEach((row, i) => {
     json[i + 1] = row;
   });
-  console.log(json);
   return json;
 }

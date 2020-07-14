@@ -29,7 +29,7 @@ Converts a CSV string to JSON
 ## Converting a CSV String to JSON
 
 ```typescript
-import { CSVtoJSON } from "https://deno.land/x/data-format-converter@v1.0.0/mod.ts";
+import { CSVtoJSON } from "https://deno.land/x/data-format-converter@v1.1.0/mod.ts";
 const csvString =
   "name, age, year\n" +
   "John Doe, 33, 1990\n" +
@@ -44,7 +44,7 @@ Converts a JSON object to CSV
 ## Converting a JSON object to CSV
  
 ```typescript
-import { JSONtoCSV } from "https://deno.land/x/data-format-converter@v1.0.0/mod.ts";
+import { JSONtoCSV } from "https://deno.land/x/data-format-converter@v1.1.0/mod.ts";
 const json = [
   [
     "name", "age", "year"
@@ -64,7 +64,7 @@ const result = JSONtoCSV(json) // "name, age, dob\n John Doe, 33, 1990\n Jane Do
 ## Converting a JSON Object to XML
 
 ```typescript
-import { JSONtoXML } from "https://deno.land/x/data-format-converter@v1.0.0/mod.ts";
+import { JSONtoXML } from "https://deno.land/x/data-format-converter@v1.1.0/mod.ts";
 const exampleJson = {
   name: {
     age: {
