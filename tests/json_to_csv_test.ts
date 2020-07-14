@@ -2,7 +2,7 @@ import { JSONtoCSV } from "../src/json_to_csv.ts";
 import { assertEquals } from "./deps.ts"
 
 Deno.test({
-  name: "CSV to JSON",
+  name: "JSON to CSV",
   fn(): void {
     const json = [
         [
