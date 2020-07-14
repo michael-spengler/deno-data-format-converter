@@ -31,7 +31,7 @@ Deno.test({
     const result = JSONtoXML(exampleJson);
     assertEquals(
       result,
-      '<?xml version="1.0" encoding="UTF-8" ?>\n' +
+        '<?xml version="1.0" encoding="UTF-8" ?>\n' +
         '<name nameAttr="I am an attribute for the name tag">\n' +
         '  <age b="b">\n' +
         "    <place>\n" +
